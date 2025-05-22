@@ -15,6 +15,9 @@ inteiro = {digito}+
           }
 "+"       { return new Symbol(sym.MAIS); }
 "-"       { return new Symbol(sym.MENOS); }
+"*"       { return new Symbol(sym.VEZES); }
+"/"       { return new Symbol(sym.DIVIDIDO); }
+"^"       { return new Symbol(sym.POTENCIA); }
 ";"       { return new Symbol(sym.PTVIRG); }
 \n        { /* Ignora nova linha. */ }
 [ \t\r]+  { /* Ignora espaços. */ }
