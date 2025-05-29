@@ -1,13 +1,13 @@
 import java_cup.runtime.*;
 
 terminal Integer INTEIRO;
-terminal MAIS, MENOS, VEZES, DIVIDIDO, POTENCIA, PTVIRG;
+terminal MAIS, MENOS, VEZES, DIVIDIDO, RESTO, POTENCIA, PTVIRG;
 
 non terminal inicio;
 non terminal Integer expr;
 
 precedence left MAIS, MENOS;
-precedence right VEZES, DIVIDIDO, POTENCIA;
+precedence right VEZES, DIVIDIDO, RESTO, POTENCIA;
 
 start with inicio;
 
